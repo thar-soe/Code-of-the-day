@@ -1,4 +1,13 @@
-public static double distance(int x1, int y1, int x2, int y2)
+import java.text.DecimalFormat;
+
+public class one 
+{
+	public static void main(String[] args)
+	{
+
+	}
+	
+	public static double distance(int x1, int y1, int x2, int y2) //Author: Martin Vera 
 	{
 		int x = x2 - x1;
 		x = (int) Math.pow(x, 2);
@@ -7,4 +16,6 @@ public static double distance(int x1, int y1, int x2, int y2)
 		y = (int) Math.pow(y, 2);
 		
 		return Math.sqrt(x + y);
+		
 	}
+}
