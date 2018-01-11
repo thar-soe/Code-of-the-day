@@ -37,7 +37,24 @@ public class Second{
 		System.out.println("Positive: " + sumP);
 		System.out.println("Negative: " + sumN);
 	}
-
-
+	
+	public static void Second(int [] array) // Martin's method
+	  {
+		  int positive = 0, negative = 0;
+	      for(int i = 0; i < array.length; i++)
+	      {
+	    	  	if(array[i] >= 0)
+	    	  	{
+	    	  		positive = positive + array[i];
+	    	  	}
+	    	  	else
+	    	  	{
+	    	  		negative = negative + array[i];
+	    	  	}
+	      }
+	      
+	      System.out.println("Positive sum: " + positive);
+	      System.out.println("Negative sum: " + negative);
+	  }
 
 }
