@@ -2,7 +2,7 @@ public program1{
 
   public static void main(String []args)
   {
-      //Make at program prints a right triangel
+      //create a method that prints a right triangle
       
       /**
       Output:
@@ -12,6 +12,7 @@ public program1{
       ***
       ****
       *****
+      
       */
   }
   public static triangleOne(){ // Alvaro's method
@@ -24,6 +25,7 @@ public program1{
              System.out.print("*");
           }
           System.out.println();
+      }
   }
 
 
