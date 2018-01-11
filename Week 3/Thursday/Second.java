@@ -17,6 +17,18 @@ public class Second{
       
       
   }
+  
+  public static void print2Sums(int[] arr) {  //Kevin's Method
+        int posSum = 0, negSum = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > 0) {
+                posSum += arr[i];
+            } else {
+                negSum += arr[i];
+            }
+        }
+        System.out.println("Sum of Positives: " + posSum + "\nSum of Negatives: " + negSum);
+    }
 
 
 
