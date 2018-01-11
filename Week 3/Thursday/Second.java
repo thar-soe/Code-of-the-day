@@ -11,7 +11,7 @@ public class Second{
       int [] array = {2,4,6,-5,7,2,-5,6,10,-35,66};
       
   }
-  public static void (int [] array)
+  public static void (int [] array) // Alvaro' method
   {
       
       
