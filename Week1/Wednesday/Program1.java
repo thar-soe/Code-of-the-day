@@ -1,4 +1,4 @@
-public program1{
+public class program1{
 
   public static void main(String []args)
   {
@@ -15,7 +15,7 @@ public program1{
       
       */
   }
-  public static triangleOne(){ // Alvaro's method
+  public static void triangleOne(){ // Alvaro's method
   
       for(int i = 0; i< 5; i++)
       {
