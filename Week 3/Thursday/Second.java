@@ -9,9 +9,29 @@ public class Second{
       //positive: ##
       //negative: ##
       int [] array = {2,4,6,-5,7,2,-5,6,10,-35,66};
-      
+      beckersSums(array);
   }
-  public static void (int [] array) // Alvaro' method
+
+  public static void beckersSums(int[] nums) {
+    int positives = 0;
+    int negatives = 0;
+
+    // we ignore zero since it is neither positive nor negative
+    for (int i : nums) {
+      if (i > 0) {
+        positives += i;
+      } else if (i < 0) {
+        negatives += i;
+      }
+    }
+
+    System.out.println(
+        String.format("∑ > 0: %d\n∑ < 0: %d",
+        positives,
+        negatives));
+  }
+
+  public static void sum(int [] array) // Alvaro' method
   {
       
       
