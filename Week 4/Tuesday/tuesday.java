@@ -3,20 +3,22 @@ public class tuesday {
     
     public static void main(String[] args) {
         
-        //
+        // Make a method that accepts a string that consists of positive numbers (digits)
+	// and stores those digits into an int array
+	// then the method should return the array;
         
-        
+        int [] array;
         
         
         String str = " 2 5 6 7 4 3";
         
-        method(str);
+       array =  method(str);
         
     }
     public static int [] method(String str) // Alvaro's method
     {
         int length = 0;
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < str.length; i++) {
             
             String letter = str.substring(i, i+1);
             if (letter.equals(" ")) {
