@@ -47,6 +47,29 @@ public class tuesday {
         
         return num;
     }
+	public static int[] separate(String string_to_convert) {//Rushabh's Method
+		int size_of_string=string_to_convert.length();	//Getting Size of the string
+		int lengthOfArray=0; //Initializing the variable
+		int Array_with_values[] =new int[string_to_convert.length()] ; //initializing int array to get values from the string
+		for(int i=0,k=0;i<size_of_string;i++) {
+			if (string_to_convert.charAt(i)== ' ') { //Finding spaces
+				
+		         if(i>0) {
+		        	 Array_with_values[k]=Integer.parseInt(String.valueOf(string_to_convert.charAt(i-1)));
+		        	 k++;
+		        	 lengthOfArray++;
+		         }
+		    }
+		}
+		int main_int_array[]=new int[lengthOfArray]; // creating a new array to filter out the values
+		for(int i=0;i<lengthOfArray;i++) {
+			if(Array_with_values[i]!=0) {
+				main_int_array[i]=Array_with_values[i]; // parsing the values
+			}
+		}
+		
+		return main_int_array; // returning the array
+	}
     
     	public static int[] string_to_positive_array(String integer_string) //Martin Lennan's method
 	{
@@ -80,22 +103,4 @@ public class tuesday {
 		
 		return integer_array;
 	}
-	
-	public static int[] foo(String str)	// Danny Rivera
-	{
-		int j = 0;
-		int[] number = new int[str.length()];
-		for(int i=0; i<str.length(); i++)
-		{
-			String letter = str.substring(i, i+1);
-			if(!letter.equals(" "))
-			{
-				int temp = Integer.parseInt(letter);
-				number[j] = temp;
-				System.out.println(number[j]);
-				j++;
-			}	
-		}
-		return number;	
-	} 
 }
