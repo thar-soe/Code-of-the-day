@@ -80,4 +80,35 @@ public class tuesday {
 		
 		return integer_array;
 	}
+	
+	public static void stringToArray(String a)		//Esther's method (working on it)
+	{
+		int size = 0;
+		for(int i = 0; i < a.length(); i++)
+		{
+			if(a.charAt(i) == ' ')
+			{
+				size++;
+			}
+		}
+		size = size + 1;
+		int[] array = new int[size];
+		char[] c = a.toCharArray();
+		int count = 0;
+		for(int j = 0; j < a.length(); j++)
+		{
+			
+			if(a.charAt(j) != ' ' && count <= size)
+			{
+				array[count] = c[j];
+				count++;
+			}
+		}
+		
+		for(int i = 0; i < array.length; i++)
+		{
+			
+			System.out.println(array[i]);
+		}
+	}
 }
