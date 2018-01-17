@@ -50,5 +50,5 @@ public class String2Array
 		
 		return intArray;
 	}
-}
+} 
 	
