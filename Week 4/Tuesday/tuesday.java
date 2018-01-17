@@ -13,6 +13,7 @@ public class tuesday {
         String str = " 2 5 6 7 4 3";
         
        array =  method(str);
+       stringToArray(str);
         
     }
     public static int [] method(String str) // Alvaro's method
@@ -102,5 +103,33 @@ public class tuesday {
 		}
 		
 		return integer_array;
+	}
+	
+	
+	public static int[] stringToArray(String a)		//Esther's method
+	{
+		int size = 0;		
+		for(int i = 0; i < a.length(); i++)
+		{
+			if(a.charAt(i) == ' ')			//checks for spaces and counts it, to establish size of int array
+			{
+				size++;
+			}
+		}
+		
+		size = size + 1;		//official size of int array
+		int[] array_of_integers = new int[size];		//int array to place integers from string
+		int count = 0;		//keep count/size of int array
+		for(int j = 0; j < a.length(); j++)
+		{
+			if(a.charAt(j) != ' ' && count <= size)		//skip spaces of string, get integers from string and place in int array
+			{
+				array_of_integers[count] = Integer.parseInt(String.valueOf(a.charAt(j)));
+				System.out.println(array_of_integers[count]);
+				count++;
+			}
+		}
+		
+		return array_of_integers;
 	}
 }
