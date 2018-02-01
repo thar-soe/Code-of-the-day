@@ -15,3 +15,16 @@ public static String newWord(String n)  // Daniel's Method
         
         return temp;
     }
+public static StringBuilder convertString(String scs){ //Rushabh's Method
+		int i=scs.length()-2;
+		char c=scs.charAt(0);
+		char d=scs.charAt(scs.length()-1);
+		StringBuilder sc=new StringBuilder();
+		sc.append(c);
+		sc.append(i);
+		sc.append(d);
+		System.out.print(sc);
+		return sc;
+	}
+
+
