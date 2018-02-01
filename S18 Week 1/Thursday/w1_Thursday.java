@@ -27,4 +27,12 @@ public static StringBuilder convertString(String scs){ //Rushabh's Method
 		return sc;
 	}
 
+static String work(String input){ //juancarlos's method
+		int length = input.length();
+		
+		String work = input.charAt(0) + String.valueOf(length-2) + input.charAt(length-1);
+		return work;
+		
+	}
+
 
