@@ -33,3 +33,8 @@ public class Thursday{
         return temp;
     }
 }
+
+//Ariel's Method
+public static String numMethod(String word){
+		return  ("" +word.charAt(0) + (word.length()-2)+ word.charAt(word.length()-1)); 
+	}
