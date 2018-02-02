@@ -33,5 +33,24 @@ public class w1Friday{
     
     
   }
+  private static StringBuilder abriviate(String c) {//Rushabh's Method
+		// TODO Auto-generated method stub
+		String[] array=c.split(" ");
+		StringBuilder newer=new StringBuilder();
+		for(int i=0;i<array.length;i++) {
+			if(array[i].length()<=3) {
+				newer.append(array[i]+" ");
+				
+			}else {
+				
+				int j=array[i].length()-2;
+				char c1=array[i].charAt(0);
+				char d=array[i].charAt(array[i].length()-1);
+				newer.append(c1+Integer.toString(j)+d+" ");
+				
+			}
+		}
+		return newer;
+	}
 
 }
