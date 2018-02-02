@@ -52,5 +52,19 @@ public class w1Friday{
 		}
 		return newer;
 	}
-
+	
+	public static String abbSent(String sent) { //Kevin's Code
+        String[] arr = sent.split(" ");
+        for (int i = 0; i < arr.length; i++) {
+            StringBuilder temp = new StringBuilder();
+            if (arr[i].length() > 3) {
+                arr[i] = temp.append(arr[i].charAt(0) + ((arr[i].length() - 2) + "") + arr[i].charAt(arr[i].length() - 1)).toString();
+            }
+        }
+        String retString = arr[0];
+        for(int i = 1; i < arr.length; i++) {
+            retString += (" " + arr[i]);
+        }
+        return retString;
+    }
 }
