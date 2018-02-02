@@ -38,3 +38,23 @@ public class Thursday{
 public static String numMethod(String word){
 		return  ("" +word.charAt(0) + (word.length()-2)+ word.charAt(word.length()-1)); 
 	}
+
+public static StringBuilder convertString(String scs){ //Rushabh's Method		 +}
+ 		int i=scs.length()-2;		
+ 		char c=scs.charAt(0);		
+ 		char d=scs.charAt(scs.length()-1);		
+ 		StringBuilder sc=new StringBuilder();		
+ 		sc.append(c);		
+ 		sc.append(i);		
+ 		sc.append(d);		
+ 		System.out.print(sc);		
+ 		return sc;		
+ 	}		
+ 		
+ static String work(String input){ //juancarlos's method		
+ 		int length = input.length();		
+ 				
+ 		String work = input.charAt(0) + String.valueOf(length-2) + input.charAt(length-1);		
+ 		return work;		
+ 				
+	}
