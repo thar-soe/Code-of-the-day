@@ -1,4 +1,4 @@
-public class Friday{
+public class w1Friday{
 
 
   public static void main(String [] args){
