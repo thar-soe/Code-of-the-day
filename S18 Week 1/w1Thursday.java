@@ -15,30 +15,33 @@ public class w1Thursday{
 
    System.out.println(stringConvert(h));
  }
-
-
+ public static String method(String str){  // Alvaro's 
+        int n = str.length();
+        return str.substring(0, 1) + (n-2) + str.charAt(n-1);
+ }
+	
  public static String abbreviate(String word) { //Kevin's Method
         char[] charWord = word.toCharArray();
         StringBuilder abbWord = new StringBuilder();
         abbWord.append(charWord[0] + ((charWord.length-2) + "") + charWord[charWord.length-1]);
         return abbWord.toString();
-    }
+ }
 
  public static String newWord(String n)  // Daniel's Method
-    {
+ {
         int num = n.length() - 2;
         char a = n.charAt(0);
         char b = n.charAt(n.length() -1);
         String temp = a + Integer.toString(num) + b;
         
         return temp;
-    }
-}
+  
+ }
 
-//Ariel's Method
-public static String numMethod(String word){
-		return  ("" +word.charAt(0) + (word.length()-2)+ word.charAt(word.length()-1)); 
-	}
+
+public static String numMethod(String word){ //Ariel's Method
+	return  ("" +word.charAt(0) + (word.length()-2)+ word.charAt(word.length()-1)); 
+}
 
 public static StringBuilder convertString(String scs){ //Rushabh's Method		 +}
  		int i=scs.length()-2;		
