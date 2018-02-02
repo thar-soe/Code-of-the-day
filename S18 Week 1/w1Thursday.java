@@ -1,4 +1,4 @@
-public class Thursday{
+public class w1Thursday{
 
  public static void main(String [] args){
   // Method that accepts a string that consists of one word.
