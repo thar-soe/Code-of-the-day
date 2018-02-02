@@ -10,9 +10,10 @@ public class Thursday{
          
   // Output: H3o
          
-         
-         
-         
+   
+   String h = "Hello";
+
+   System.out.println(stringConvert(h));
  }
 
 
@@ -57,4 +58,13 @@ public static StringBuilder convertString(String scs){ //Rushabh's Method		 +}
  		String work = input.charAt(0) + String.valueOf(length-2) + input.charAt(length-1);		
  		return work;		
  				
+	}
+
+public static String stringConvert(String a)	//Esther's method
+	{	
+		int length_of_subst = a.length() - 2;	//length of mid substring
+		String subst = a.substring(1, a.length()-1);	//mid substring
+		a = a.replace(subst, ""+length_of_subst);		//replace(oldChar, newChar);
+		
+		return a;
 	}
