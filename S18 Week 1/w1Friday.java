@@ -108,5 +108,20 @@ public class w1Friday{
         }
         return retString;
     }
+	
+  public static String MartinLennon(String words){
+	  
+	  
+  }
+	
+  public static String JamesC(String words){
+	  
+	  
+  }
+  public static String KevinPhac(String words){
+	  
+	  
+  }
+	
 
 }
