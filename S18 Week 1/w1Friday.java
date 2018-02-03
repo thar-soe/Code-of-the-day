@@ -122,6 +122,11 @@ public class w1Friday{
 	  
 	  
   }
+  public static String JordeG(String words){
+	  
+	  
+  }
+	
 	
 
 }
