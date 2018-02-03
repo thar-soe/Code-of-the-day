@@ -71,6 +71,29 @@ public class w1Friday{
 		return newer;
 	}
 	
+
+	 public static String sepStr(String str) // Daniel's Method
+       {
+        String[] array = str.split(" ");
+
+        String temp = "";
+        
+        for(int i = 0; i < array.length; i++) 
+        {
+            if(array[i].length() > 3)
+            {
+                temp += newWord(array[i]) + " ";
+            }
+            else
+            {
+                temp += array[i] + " ";
+            }   
+        }
+        
+        return temp;
+    }
+
+
 	public static String abbSent(String sent) { //Kevin's Code
         String[] arr = sent.split(" ");
         for (int i = 0; i < arr.length; i++) {
@@ -85,4 +108,5 @@ public class w1Friday{
         }
         return retString;
     }
+
 }
