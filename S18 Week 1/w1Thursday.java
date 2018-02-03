@@ -76,5 +76,11 @@ public static String stringConvert(String a)	//Esther's method
 
 	 
  }
+	
+public static String Rushdah(String a) 
+ {
+
+	 
+ }	
 	 
 	 
