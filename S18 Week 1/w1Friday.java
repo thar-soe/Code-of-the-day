@@ -29,6 +29,24 @@ public class w1Friday{
   
   }
   public static String AlvaroMethod(String str){
+	  
+	  String result = "";
+        String [] array = str.split(" ");
+        //System.out.println(array.length);
+        if(str.length() < 4){
+            return str;
+            }
+        for (int i = 0; i < array.length; i++) {
+            //System.out.println(array[i]);
+            int n = array[i].length();
+            if(n < 4)
+            {   
+                result += array[i]+ " ";
+                continue;
+            }
+            result += array[i].substring(0, 1) +(n-2) + array[i].charAt(n-1) +" ";   
+        }
+        return result;
     
     
     
