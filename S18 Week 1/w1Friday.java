@@ -29,6 +29,24 @@ public class w1Friday{
   
   }
   public static String AlvaroMethod(String str){
+	  
+	  String result = "";
+        String [] array = str.split(" ");
+        //System.out.println(array.length);
+        if(str.length() < 4){
+            return str;
+            }
+        for (int i = 0; i < array.length; i++) {
+            //System.out.println(array[i]);
+            int n = array[i].length();
+            if(n < 4)
+            {   
+                result += array[i]+ " ";
+                continue;
+            }
+            result += array[i].substring(0, 1) +(n-2) + array[i].charAt(n-1) +" ";   
+        }
+        return result;
     
     
     
@@ -53,6 +71,7 @@ public class w1Friday{
 		return newer;
 	}
 	
+
 	 public static String sepStr(String str) // Daniel's Method
        {
         String[] array = str.split(" ");
@@ -72,6 +91,22 @@ public class w1Friday{
         }
         
         return temp;
+    }
+
+
+	public static String abbSent(String sent) { //Kevin's Code
+        String[] arr = sent.split(" ");
+        for (int i = 0; i < arr.length; i++) {
+            StringBuilder temp = new StringBuilder();
+            if (arr[i].length() > 3) {
+                arr[i] = temp.append(arr[i].charAt(0) + ((arr[i].length() - 2) + "") + arr[i].charAt(arr[i].length() - 1)).toString();
+            }
+        }
+        String retString = arr[0];
+        for(int i = 1; i < arr.length; i++) {
+            retString += (" " + arr[i]);
+        }
+        return retString;
     }
 
 }
