@@ -71,3 +71,10 @@ public static String stringConvert(String a)	//Esther's method
 		
 		return a;
 	}
+ public static String MartinLennon(String a)
+ {
+
+	 
+ }
+	 
+	 
