@@ -41,3 +41,19 @@ public static String numberMethod(int n) // Daniel's Method
         
             return "mocha_missing";
     }
+
+    static String work(int x) { //juancarlos olivares
+		if (x % 3 == 0 && x % 4 == 0) {
+			if (x % 2 == 0) {
+				return "Coffee Script";
+			}
+			return "Coffee";
+		}
+		if (x % 3 == 0) {
+			if (x % 2 == 0) {
+				return "Coffee Script";
+			}
+			return "Java";
+		}
+		return "mocha_missing!";
+	}
