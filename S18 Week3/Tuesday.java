@@ -17,3 +17,27 @@ publci class{
 
 
 }
+
+public static String numberMethod(int n) // Daniel's Method
+    {
+        String temp = "";
+        
+        if((n%3) == 0)
+        {
+            if((n%4) == 0)
+            {
+                temp += "Coffee ";
+            }
+            else
+            {
+                temp += "Java ";
+            }
+        }
+        
+        if(!(temp.isEmpty()))
+        {
+            return temp + "Script ";
+        }
+        
+            return "mocha_missing";
+    }
