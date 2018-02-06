@@ -42,28 +42,6 @@ public static String numberMethod(int n) // Daniel's Method
             return "mocha_missing";
     }
 
-
-
-	public static String caffineBuzz (int n) { //Eddy's method
-		String msg = "";
-		
-		if (n % 3 == 0 && n % 4 == 0) {
-			msg = "Coffeescript";
-		}
-		
-		else if (n % 3 == 0) {
-			msg =  "Java";
-			if (n%2 == 0) {
-				msg += "script";
-			}
-		}
-		
-		else {
-			return "mocha_missing!";
-		}
-		
-		return msg;
-  }
     static String work(int x) { //juancarlos olivares
 		if (x % 3 == 0 && x % 4 == 0) {
 			if (x % 2 == 0) {
@@ -78,5 +56,30 @@ public static String numberMethod(int n) // Daniel's Method
 			return "Java";
 		}
 		return "mocha_missing!";
-
 	}
+
+
+
+
+	
+	public static String caffeineBuzz (int n) // Thar's
+	{
+		if (n%12 == 0) 
+			{
+				return "java script";
+			}
+		if (n%6 ==0 )
+			{
+				return "coffee script";
+			}
+		if (n%3 ==0 _
+			{
+				return "java"; 
+			}
+		else 
+			{
+			 	return "mocha missing";
+			}
+			
+	}
+}
